@@ -44,12 +44,12 @@ while(video.isOpened()):
         if conf>=45 and conf <=85:
             print(id)
             print(labels[id])
-            cv2.putText(frame, labels[id], (x,y), cv2.FONT_HERSHEY_SIMPLEX, 1, (129,98,2), 3, cv2.LINE_AA)
+            cv2.putText(frame, labels[id], (x,y), cv2.FONT_HERSHEY_SIMPLEX, 1, (129,198,92), 3, cv2.LINE_AA)
             
         img_item = "C:\\Users\\Akash\\.spyder-py3\\myimage.png"
         cv2.imwrite(img_item, roi_color)
         
-        frame = cv2.rectangle(frame, (x,y),(x+w,y+h), (120,123,143), 3)
+        frame = cv2.rectangle(frame, (x,y),(x+w,y+h), (130,23,43), 3)
         
         eyes= eye.detectMultiScale(gray, scaleFactor=1.05, minNeighbors=5)
         
